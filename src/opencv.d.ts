@@ -766,7 +766,7 @@ declare module opencv {
         countNonZero(src: Mat | MatVector): number;
         dct(src: Mat, dst: Mat, flags: DftFlags): void;
         determinant(src: Mat): number;
-        dft(src: Mat, dst: Mat, flags: DftFlags, nonzeroRows: number): void;
+        dft(src: Mat, dst: Mat, flags?: DftFlags, nonzeroRows?: number): void;
         divide(src1: Mat, src2: Mat, dst: Mat, scale: number, dtype?: number): void;
         divide(scale: number, src2: Mat, dst: Mat, dtype?: number): void;
         eigen(src: Mat, eigenvalues: Mat, eigenvectors: Mat): void;
